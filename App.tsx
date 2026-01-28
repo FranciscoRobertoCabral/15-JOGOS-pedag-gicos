@@ -10,11 +10,11 @@ import {
   Users, 
   Lock, 
   Printer, 
-  ShieldCheck,
-  Zap,
-  ChevronDown,
-  ChevronLeft,
-  ChevronRight
+  ShieldCheck, 
+  Zap, 
+  ChevronDown, 
+  ChevronLeft, 
+  ChevronRight 
 } from 'lucide-react';
 
 const carouselImages = [
@@ -47,10 +47,10 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen font-montserrat antialiased">
+    <div className="flex flex-col min-h-screen font-montserrat antialiased text-gray-900">
       
-      {/* 1. HERO SECTION (Dark BG) */}
-      <section className="bg-slate-900 text-white py-12 md:py-24 px-4 flex flex-col items-center text-center">
+      {/* 1. HERO SECTION (Blue BG) */}
+      <section className="bg-blue-900 text-white py-12 md:py-24 px-4 flex flex-col items-center text-center">
         <div className="max-w-4xl mx-auto space-y-6">
           <span className="bg-blue-600 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full uppercase tracking-widest animate-pulse">
             Acesso Imediato
@@ -58,7 +58,7 @@ const App: React.FC = () => {
           <h1 className="text-3xl md:text-6xl font-black leading-tight uppercase">
             15 JOGOS PEDAGÓGICOS PARA EDUCAÇÃO INFANTIL
           </h1>
-          <p className="text-lg md:text-2xl font-medium text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-2xl font-medium text-blue-100 max-w-2xl mx-auto leading-relaxed">
             Tire seu filho da tela e ajude no aprendizado brincando — mesmo sem tempo ou experiência
           </p>
           
@@ -69,12 +69,12 @@ const App: React.FC = () => {
             >
               QUERO ACESSO AOS JOGOS PEDAGÓGICOS
             </button>
-            <p className="text-slate-400 text-sm mt-4 font-semibold uppercase tracking-wider">
+            <p className="text-blue-300 text-sm mt-4 font-semibold uppercase tracking-wider">
               Apenas R$ 9,90 — Pagamento Único
             </p>
           </div>
           
-          <div className="flex justify-center pt-10 text-slate-500 animate-bounce">
+          <div className="flex justify-center pt-10 text-blue-400 animate-bounce">
             <ChevronDown size={32} />
           </div>
         </div>
@@ -190,12 +190,12 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* 5. PRODUCT DETAILS (Dark BG) WITH CAROUSEL */}
-      <section className="bg-slate-900 text-white py-16 md:py-24 px-4">
+      {/* 5. PRODUCT DETAILS (Green BG - Updated) WITH CAROUSEL */}
+      <section className="bg-green-900 text-white py-16 md:py-24 px-4">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Carousel Column */}
           <div className="w-full md:w-1/2 relative group">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-slate-700 aspect-[3/4]">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-green-800 aspect-[3/4]">
               {carouselImages.map((img, index) => (
                 <div 
                   key={index}
@@ -237,36 +237,36 @@ const App: React.FC = () => {
 
           <div className="w-full md:w-1/2 space-y-8">
             <div className="flex items-center gap-3">
-              <BookOpen className="text-blue-400" size={40} />
+              <BookOpen className="text-green-300" size={40} />
               <h2 className="text-2xl md:text-4xl font-black uppercase">O que você vai receber</h2>
             </div>
             
             <div className="space-y-6">
-              <h3 className="text-xl font-bold text-blue-400 uppercase tracking-tighter flex items-center gap-2">
-                <span className="w-4 h-4 bg-blue-400 inline-block rounded-sm"></span> E-book digital (PDF) com:
+              <h3 className="text-xl font-bold text-green-300 uppercase tracking-tighter flex items-center gap-2">
+                <span className="w-4 h-4 bg-green-300 inline-block rounded-sm"></span> E-book digital (PDF) com:
               </h3>
-              <ul className="space-y-4 text-lg text-slate-300">
+              <ul className="space-y-4 text-lg text-green-50">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="text-blue-400 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-green-300 flex-shrink-0 mt-1" size={20} />
                   <span>15 jogos pedagógicos passo a passo</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="text-blue-400 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-green-300 flex-shrink-0 mt-1" size={20} />
                   <span>Indicação de idade para cada jogo</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="text-blue-400 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-green-300 flex-shrink-0 mt-1" size={20} />
                   <span>Objetivo pedagógico explicado de forma simples</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="text-blue-400 flex-shrink-0 mt-1" size={20} />
+                  <CheckCircle className="text-green-300 flex-shrink-0 mt-1" size={20} />
                   <span>Sugestão de materiais fáceis (papel, lápis, tampinhas, etc.)</span>
                 </li>
               </ul>
             </div>
 
-            {/* Acesso Imediato Box Refined */}
-            <div className="bg-[#1a2536] border border-blue-900/50 p-6 rounded-2xl shadow-inner">
+            {/* Acesso Imediato Box Green Theme */}
+            <div className="bg-green-950/80 border border-green-700/50 p-6 rounded-2xl shadow-inner">
               <p className="text-lg md:text-xl font-black text-white text-center flex items-center justify-center gap-3">
                 <span className="text-2xl">👉</span> Acesso imediato após a compra
               </p>
